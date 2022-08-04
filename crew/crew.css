@@ -1,0 +1,208 @@
+body {
+  background: url('/assets/crew/background-crew-desktop.jpg');
+  background-size: cover;
+}
+
+main {
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-left: 15rem;
+  font-size: 2.5rem;
+  color: var(--white);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3 span {
+  color: var(--hover-grey);
+  font-weight: 700;
+  margin-right: 0.8rem;
+}
+
+.crew-container {
+  margin: 7rem 15rem auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.crew-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  font-family: var(--ff2);
+}
+
+.role {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.name {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.bio {
+  font-family: var(--ff1);
+  font-size: 1.7rem;
+  padding-right: 17rem;
+}
+
+.bottom {
+  display: flex;
+  gap: 4rem;
+}
+
+.crew-btn {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: var(--hover-grey);
+}
+
+.crew-active {
+  background-color: var(--white);
+}
+
+@media (max-width: 1300px) {
+  .crew-container {
+    margin: 7rem 5rem 2rem;
+  }
+
+  .name {
+    font-size: 3.7rem;
+  }
+
+  .bio {
+    padding-right: 7rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .crew-container {
+    margin: 7rem 2rem 2rem;
+  }
+
+  .name {
+    font-size: 3.5rem;
+  }
+
+  .crew-img {
+    width: 420px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background: url('/assets/crew/background-crew-tablet.jpg');
+    background-size: cover;
+  }
+
+  h3 {
+    margin-top: 2rem;
+    margin-left: 7rem;
+  }
+
+  .crew-container {
+    margin: 7rem 7rem auto;
+    grid-template-columns: 1fr;
+  }
+
+  .crew-container-left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+  }
+
+  .bio {
+    padding: 0 6rem;
+    font-size: 1.9rem;
+  }
+
+  .top {
+    align-items: center;
+  }
+
+  .bottom {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .crew-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    background: url('/assets/crew/background-crew-mobile.jpg');
+    background-size: cover;
+  }
+
+  .crew-container {
+    margin: 5rem 5rem auto;
+    grid-gap: 4rem;
+  }
+
+  .crew-container-left {
+    grid-row: 2;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .role {
+    font-size: 1.5rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .bio {
+    font-family: var(--ff1);
+    font-size: 1.7rem;
+    padding: 0 0 3rem;
+  }
+
+  .crew-container-right {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .crew-img {
+    width: 60%;
+  }
+
+  .crew-line {
+    height: 1px;
+    width: 80%;
+    background-color: var(--white);
+  }
+
+  h3 {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

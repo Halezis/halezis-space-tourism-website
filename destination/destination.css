@@ -1,0 +1,274 @@
+body {
+  background: url('/assets/destination/background-destination-desktop.jpg');
+  background-size: cover;
+}
+
+h3 {
+  margin-left: 15rem;
+  font-size: 2.5rem;
+  color: var(--white);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h3 span {
+  color: var(--hover-grey);
+  font-weight: 700;
+  margin-right: 0.8rem;
+}
+
+.dest-container {
+  margin: 7rem 15rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dest-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.destination-menu {
+  padding: 4rem 17rem 4rem 8rem;
+  display: flex;
+  gap: 3.5rem;
+}
+
+.destination-menu li {
+  position: relative;
+  list-style-type: none;
+  font-family: var(--ff1);
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: var(--pale-blue);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.destination-menu .dest-btn:hover::after {
+  content: '';
+  animation: hover 0.3s both linear;
+  background-color: var(--hover-grey);
+  height: 0.4rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+}
+
+.destination-menu .dest-btn.dest-active::after,
+.destination-menu .dest-btn.dest-active:hover::after {
+  content: '';
+  animation: none;
+  background-color: var(--white);
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  height: 0.4rem;
+  width: 100%;
+}
+
+.name {
+  margin-left: 7rem;
+  font-family: var(--ff2);
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 11rem;
+}
+
+.description {
+  margin-left: 7rem;
+  font-size: 1.5rem;
+  padding-right: 8rem;
+  letter-spacing: 0.15rem;
+}
+
+.line {
+  margin: 0 15rem 0 7rem;
+  background-color: var(--pale-blue);
+  height: 1px;
+  width: 70%;
+}
+
+.bottom {
+  text-transform: uppercase;
+  margin: 0 7rem 0 7rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.distance,
+.travel {
+  font-family: var(--ff2);
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .dest-container {
+    margin: 7rem 7rem 2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .dest-container {
+    margin: 7rem 1rem 2rem;
+  }
+
+  .destination-menu {
+    padding-left: 2rem;
+  }
+
+  .name {
+    margin-left: 2rem;
+  }
+
+  .description {
+    margin-left: 2rem;
+    padding-right: 9rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .line {
+    margin-left: 2rem;
+  }
+
+  .bottom {
+    margin: 0 7rem 0 3rem;
+    gap: 7rem;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background: url('/assets/destination/background-destination-tablet.jpg');
+    background-size: cover;
+  }
+
+  h3 {
+    margin-top: 2rem;
+    margin-left: 7rem;
+  }
+
+  .dest-container {
+    margin: 7rem 7rem 2rem;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .dest-container-right {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .destination-menu {
+    padding: 5rem;
+    gap: 5rem;
+  }
+
+  .name {
+    margin: 0;
+  }
+
+  .description {
+    text-align: center;
+    margin-left: 0;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .line {
+    width: 80%;
+  }
+
+  .bottom {
+    gap: 10rem;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    background: url('/assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+  }
+
+  h3 {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dest-container {
+    margin: 7rem 2rem 2rem;
+  }
+
+  .dest-container-right {
+    margin: 0 auto;
+  }
+
+  .destination-menu {
+    padding: 5rem;
+    gap: 3.5rem;
+  }
+
+  .name {
+    font-size: 8rem;
+  }
+
+  .description {
+    padding: 0 3rem;
+    letter-spacing: 0.01rem;
+  }
+
+  .dest-container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .destination-img {
+    width: 50%;
+  }
+
+  .line {
+    width: 70%;
+    margin: 0 2rem 2rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    margin: 0 auto;
+  }
+
+  .bottom-left,
+  .bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  .distance,
+  .travel {
+    font-size: 3rem;
+  }
+}

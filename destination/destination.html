@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="destination.css">
+
+  <title>Destination</title>
+</head>
+
+<body>
+
+  <main>
+    <header class="header">
+      <a href="/index.html"><img src="/assets/shared/logo.svg" alt="logo" class="logo"></a>
+      <div class="header-line"></div>
+      <div class="hamburger">
+        <img src="/assets/shared/icon-hamburger.svg" alt="hamburger" class="hamburger-open">
+      </div>
+
+      <ul class="menu">
+        <li class="home"><a href="/index.html"><span>00</span>Home</a></li>
+        <li class="destination active"><a href="/destination/destination.html"><span>01</span>Destination</a></li>
+        <li class="crew"><a href="/crew/crew.html"><span>02</span>Crew</a></li>
+        <li class="technology"><a href="/technology/technology.html"><span>03</span>Technology</a></li>
+      </ul>
+    </header>
+
+    <h3><span>01</span>Pick your destination</h3>
+
+    <div class="dest-container">
+      <div class="dest-container-left">
+        <img src="/assets/destination/image-mars.png" alt="destination image" class="destination-img">
+      </div>
+
+      <div class="dest-container-right">
+        <ul class="destination-menu">
+          <li class="dest-btn moon ">Moon</li>
+          <li class="dest-btn dest-active mars  ">Mars</li>
+          <li class="dest-btn europa ">Europa</li>
+          <li class="dest-btn titan ">Titan</li>
+        </ul>
+
+        <h1 class="name">Mars</h1>
+        <p class="description">Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons,
+          the tallest planetary mountain in our solar system. It's two and a half times
+          the size of Everest!</p>
+        <div class="line"></div>
+        <div class="bottom">
+          <div class="bottom-left">
+            <p>Avg. distance</p>
+            <p class="distance">225 mil. km</p>
+          </div>
+          <div class="bottom-right">
+            <p>Est. travel time</p>
+            <p class="travel">9 months
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="/script.js"></script>
+    <script src="destination.js"></script>
+  </main>
+</body>
+
+</html>
